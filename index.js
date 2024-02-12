@@ -711,13 +711,13 @@ const WhatsBotConnect = async () => {
 									},
 									'add');
 								const remains = config.WARNCOUND - count;
-								let warnmsg = `❏────[warning]────❏
-│ User :-@${m.number}
+								let warnmsg = `❏────[Verwarnung]────❏
+│ Betroffener User :-@${m.number}
 ❏────────────────❏
 ┏────── INFO ──────❏
-│ Reason :- The law in the group was not accepted
-│ Count :- ${count}
-│ Remaining :- ${remains}
+│ Begründung :- Die Gruppen-Regeln missachtet.
+│ Du hats bereits:- ${count} Verwarnungen
+│ Verbleibende bis zum AUsschluss :- ${remains} 
 ┗•───────────────❏`
 								await m.send(warnmsg, {
 									mentions: [m.sender]
@@ -767,12 +767,12 @@ const WhatsBotConnect = async () => {
 									'add');
 								const remains = config.WARNCOUND - count;
 								let warnmsg = `❏────[warning]────❏
-│ User :-@${m.number}
+│ Betroffener User :-@${m.number}
 ❏────────────────❏
 ┏────── INFO ──────❏
-│ Reason :- The law in the group was not accepted
-│ Count :- ${count}
-│ Remaining :- ${remains}
+│ Begründung :- Die Gruppen-Regeln missachtet.
+│ Du hats bereits:- ${count} Verwarnungen
+│ Verbleibende bis zum AUsschluss :- ${remains} 
 ┗•───────────────❏`
 								await m.send(warnmsg, {
 									mentions: [m.sender]
@@ -825,12 +825,12 @@ const WhatsBotConnect = async () => {
 											'add');
 										const remains = config.WARNCOUND - count;
 										let warnmsg = `❏────[warning]────❏
-│ User :-@${m.number}
+│ Betroffener User :-@${m.number}
 ❏────────────────❏
-┏─────── INFO ─────❏
-│ Reason :- The law in the group was not accepted
-│ Count :- ${count}
-│ Remaining :- ${remains}
+┏────── INFO ──────❏
+│ Begründung :- Die Gruppen-Regeln missachtet.
+│ Du hats bereits:- ${count} Verwarnungen
+│ Verbleibende bis zum AUsschluss :- ${remains} 
 ┗•───────────────❏`
 										await m.send(warnmsg, {
 											mentions: [m.sender]
